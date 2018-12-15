@@ -1,0 +1,161 @@
+ ***********************************************************
+ *           INPUT INFORMATION - COMCOT V1.7               *
+ ***********************************************************
+ #Job Description: NZ30sec bathymetry, Spherical Coordinates for code testing   
+                                                                                
+                                           
+ ------------------- GENERAL INFORMATION -------------------
+     TOTAL RUN TIME            (SECOND) :   9000.000    
+     TIME INTERVAL FOR OUTPUT  (SECOND) :   60.00000    
+     TIME STEP SIZE            (SECOND) :   1.000000    
+     TOTAL STEPS TO RUN         (STEPS) :        9000
+     STEP INTERVAL FOR OUTPUT   (STEPS) :          60
+     MAX. SURFACE DISPLACEMENT OUTPUT   : ENABLED
+     TIME HISTORY RECORD OUTPUT         : ENABLED
+     SHORELINE LOCATED AT DEPTH CONTOUR :  0.0000000E+00
+     BOUNDARY CONDITION                 : RADIATION (OPEN)
+  
+ ---------------- INITIAL CONDITION INFORMATION ---------------
+     #USE INITIAL SURFACE DEFORMATION FILE:
+  comcot_ini.dep                                                                
+                                          
+  
+ --------------- 1ST-LEVEL GRID INFORMATION -----------------
+     #  GRID IDENTIFICATION NUMBER      :           1
+        USE CARTESIAN COORDINATE SYSTEM
+        USE LINEAR SHALLOW WATER EQUATIONS
+        BOTTOM FRICTION                 : ENABLED
+           USE CONSTANT ROUGHNESS COEF. :  2.5000000E-02
+        VOLUME FLUX OUTPUT              : DISABLED
+        SURFACE DISPLACEMENT OUTPUT     : ENABLED
+        GRID LAYER POSITIONS            :
+          X_START               (METER) :  -135000.0    
+          X_END                 (METER) :   1078650.    
+          Y_START               (METER) :   3273850.    
+          Y_END                 (METER) :   4015000.    
+        GRID DIMENSION          (NX*NY) :         900 *         550
+        GRID SIZE           (DX, METER) :   1350.000    
+        GRID SIZE           (DY, METER) :   1350.000    
+        TIME STEP SIZE     (DT, SECOND) :   1.000000    
+        NUMBER OF CHILD GRID LAYERS     :           1
+                CHILD GRID LAYER ID     :           2
+        BATHYMETRY DATA FILE NAME       :
+  depth_1350-02.xyz                                                             
+                                          
+ --------------- SUB-LEVEL GRID INFORMATION -----------------
+     #  GRID IDENTIFICATION NUMBER      :           2
+        USE CARTESIAN COORDINATE SYSTEM
+        USE LINEAR SHALLOW WATER EQUATIONS
+        BOTTOM FRICTION                 : ENABLED
+           USE CONSTANT ROUGHNESS COEF. :  2.5000000E-02
+        VOLUME FLUX OUTPUT              : DISABLED
+        SURFACE DISPLACEMENT OUTPUT     : ENABLED
+        PARENT GRID ID                  :           1
+        GRID SIZE RATIO                 :           3
+        TIME STEP SIZE RATIO            :           1
+        POSITIONS IN ITS PARENT LAYER   :
+          X_START               (METER) :   527400.0    
+          X_END                 (METER) :   809100.0    
+          Y_START               (METER) :   3678400.    
+          Y_END                 (METER) :   3906100.    
+          I_START               (INDEX) :         492
+          I_END                 (INDEX) :         700
+          J_START               (INDEX) :         301
+          J_END                 (INDEX) :         469
+        GRID DIMENSION          (NX*NY) :         627 *         507
+        GRID SIZE           (DX, METER) :   450.0000    
+        GRID SIZE           (DY, METER) :   450.0000    
+        TIME STEP SIZE     (DT, SECOND) :   1.000000    
+        NUMBER OF CHILD GRID LAYERS     :           2
+                CHILD GRID LAYER ID     :           3
+                CHILD GRID LAYER ID     :           7
+        BATHYMETRY DATA FILE NAME       :
+  depth_0450-07.xyz                                                             
+                                          
+ ------------------------------------------------------------
+     #  GRID IDENTIFICATION NUMBER      :           3
+        USE CARTESIAN COORDINATE SYSTEM
+        USE LINEAR SHALLOW WATER EQUATIONS
+        BOTTOM FRICTION                 : ENABLED
+           USE CONSTANT ROUGHNESS COEF. :  2.5000000E-02
+        VOLUME FLUX OUTPUT              : DISABLED
+        SURFACE DISPLACEMENT OUTPUT     : ENABLED
+        PARENT GRID ID                  :           2
+        GRID SIZE RATIO                 :           3
+        TIME STEP SIZE RATIO            :           2
+        POSITIONS IN ITS PARENT LAYER   :
+          X_START               (METER) :   598800.0    
+          X_END                 (METER) :   688200.0    
+          Y_START               (METER) :   3754300.    
+          Y_END                 (METER) :   3816700.    
+          I_START               (INDEX) :         161
+          I_END                 (INDEX) :         359
+          J_START               (INDEX) :         171
+          J_END                 (INDEX) :         309
+        GRID DIMENSION          (NX*NY) :         597 *         417
+        GRID SIZE           (DX, METER) :   150.0000    
+        GRID SIZE           (DY, METER) :   150.0000    
+        TIME STEP SIZE     (DT, SECOND) :  0.5000000    
+        NUMBER OF CHILD GRID LAYERS     :           0
+        BATHYMETRY DATA FILE NAME       :
+  depth_0150-19.xyz                                                             
+                                          
+ ------------------------------------------------------------
+     #  GRID IDENTIFICATION NUMBER      :           7
+        USE CARTESIAN COORDINATE SYSTEM
+        USE LINEAR SHALLOW WATER EQUATIONS
+        BOTTOM FRICTION                 : ENABLED
+           USE CONSTANT ROUGHNESS COEF. :  2.5000000E-02
+        VOLUME FLUX OUTPUT              : DISABLED
+        SURFACE DISPLACEMENT OUTPUT     : ENABLED
+        PARENT GRID ID                  :           2
+        GRID SIZE RATIO                 :           3
+        TIME STEP SIZE RATIO            :           2
+        POSITIONS IN ITS PARENT LAYER   :
+          X_START               (METER) :   625800.0    
+          X_END                 (METER) :   724200.0    
+          Y_START               (METER) :   3803800.    
+          Y_END                 (METER) :   3897700.    
+          I_START               (INDEX) :         221
+          I_END                 (INDEX) :         439
+          J_START               (INDEX) :         281
+          J_END                 (INDEX) :         489
+        GRID DIMENSION          (NX*NY) :         657 *         627
+        GRID SIZE           (DX, METER) :   150.0000    
+        GRID SIZE           (DY, METER) :   150.0000    
+        TIME STEP SIZE     (DT, SECOND) :  0.5000000    
+        NUMBER OF CHILD GRID LAYERS     :           1
+                CHILD GRID LAYER ID     :           9
+        BATHYMETRY DATA FILE NAME       :
+  depth_0150-20.xyz                                                             
+                                          
+ ------------------------------------------------------------
+     #  GRID IDENTIFICATION NUMBER      :           9
+        USE CARTESIAN COORDINATE SYSTEM
+        USE LINEAR SHALLOW WATER EQUATIONS
+        BOTTOM FRICTION                 : ENABLED
+           USE VARIABLE MANNING ROUGHNESS COEFFICIENTS.
+        VOLUME FLUX OUTPUT              : DISABLED
+        SURFACE DISPLACEMENT OUTPUT     : ENABLED
+        PARENT GRID ID                  :           7
+        GRID SIZE RATIO                 :           3
+        TIME STEP SIZE RATIO            :           1
+        POSITIONS IN ITS PARENT LAYER   :
+          X_START               (METER) :   679600.0    
+          X_END                 (METER) :   722900.0    
+          Y_START               (METER) :   3818600.    
+          Y_END                 (METER) :   3846900.    
+          I_START               (INDEX) :         361
+          I_END                 (INDEX) :         649
+          J_START               (INDEX) :         101
+          J_END                 (INDEX) :         289
+        GRID DIMENSION          (NX*NY) :         867 *         567
+        GRID SIZE           (DX, METER) :   50.00000    
+        GRID SIZE           (DY, METER) :   50.00000    
+        TIME STEP SIZE     (DT, SECOND) :  0.5000000    
+        NUMBER OF CHILD GRID LAYERS     :           0
+        BATHYMETRY DATA FILE NAME       :
+  depth_0050-52_mod.xyz                                                         
+                                          
+ ------------------------------------------------------------
+  
